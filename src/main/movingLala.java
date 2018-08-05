@@ -25,7 +25,7 @@ public class movingLala {
 	public textUI getTUI() {
 		return tui;
 	}
-	
+
 	public static void main(String[] args) {
 		
 		boolean continu = true;
@@ -33,7 +33,8 @@ public class movingLala {
 		tui.printText();
 		scan = new Scanner(System.in);
         while (continu) {
-            //continu = tui.processInputLine(scan.next());
+            continu = tui.processInput(scan.next());
+            tui.grid(20, 10);
         }
 //		movingLala();
 	}
